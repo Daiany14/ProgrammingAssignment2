@@ -1,15 +1,19 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The function creates the inverse of a matrix
 
-## Write a short comment describing this function
 
-makeCacheMatrix <- function(x = matrix()) {
+## create a squared matrix
 
+makeCacheMatrix<-function(x,y){
+  matrix(x,nrow = y,ncol = y)
+  
+  matrix(x,y,y)
 }
+## create the inverse of a matrix
 
-
-## Write a short comment describing this function
-
-cacheSolve <- function(x, ...) {
+cacheSolve<- function(x){
+  
+  solve(x)
+  
+}
         ## Return a matrix that is the inverse of 'x'
-}
+
